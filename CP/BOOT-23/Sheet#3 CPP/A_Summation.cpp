@@ -7,10 +7,10 @@ int main()
     for this- abs ki shikte hobe ,
     in cpp lets try input
   */
-   int n, i;
+   long long int n, i;
    cin >> n;
-   int x[n];
-   int sum = 0;
+   long long int x[n];
+   long long int sum = 0;
    for( i = 0;  i  < n; i++)
    {
         cin >> x[i];
