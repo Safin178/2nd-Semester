@@ -23,32 +23,42 @@ using namespace std;
 
 
   */
-   
-  
-   
-
-    
-
-    
-
-    
-
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 int main() 
 {
+    //int arr[100];
+   int n;
+   cin >> n;
+   vector<int>arr(5, 20);
+//    arr.push_back(5);
+//   // cout << arr[0] << endl;
+//   cout << (int) arr.size() << arr[3]<< endl;
+//   //arr.size() O(1) e kaj kore
+
+//vector input >
+
+  for(int  i =0 ; i < n; i++)
+  {
+    int x;cin >> x;
+    arr.push_back(x);
+  }
+    for(int  i =0 ; i < (int)arr.size(); i++)
+  {
+   cout << arr[i] << " ";
+  }
+
+    //eikane jodi vector<int>arr(5, 10); likle 5 size er array jetar shob element 10
+
+
+
+
+
+
+
+
+
+
 
    return 0;
 }
