@@ -135,16 +135,108 @@ int main()
 
 
 /*
-  shohoz loop
+  ranged based for loop
 
   for(int x : arr)
   {
     cout << x << " ";
   }
-  time 1:07
+  eikon bitore x copy hoye print hocce just
 
+  for(auto &x : arr)
+  {
+    cout << x << " ";
+  }
+  ekn tik moto arr o change hobe and arr er data type icca moto hote pare
 
+  vector<int>arr(n);
+  size define kore dile
+
+  for(auto &x : arr)
+  {
+    cin >> x;
+  }
+  input korte parbo
 */
+
+  /*
+  string s;
+
+  
+  s.size() //string er size koto oita
+
+  s.length() //string er size koto oita
+  doita same
+
+  s.push_back('a'); //string er last e a add hobe
+  s.pop_back(); //string er last e a remove hobe
+
+  /////s.insert(2, "abc"); //2 no index e abc add hobe
+  s.erase(2, 3); //2 no index theke 3 ta remove hobe
+
+  ////////s.substr(2, 3); //2 no index theke 3 charecter ta print hobe
+  getline(cin, s); //string input nibo \n porjonto
+
+  getline(cin, s, 'a'); //string input nibo a porjonto
+  
+  getline er age int n nile jamela hoi
+  tokon cin.ignore() use korte hoi
+  watch   notion question
+
+  string input
+
+  string s;
+  cin >> s;
+  for(i = 0; i < (int)s.size(); i++)
+  {
+    cout << s[i] << endl;
+  }
+
+  int pos = s.find("abc"); //string er moddhe abc ase kina check korbe and return korbe index
+
+  bhai co-pilot amr theke balo banglish liktese 
+  
+    swap function referance parameter niye kaj kore
+
+    max(5, 10) //10 return korbe
+
+    max("abc", "def") //def return korbe
+
+    max(5, 10, 15) //15 return korbe
+
+    oparetor overloading bujte hobe
+    polymorphism bujte hobe
+
+    sort(s.begin(), s.end()); //string er sob char sort kore dibe
+    l theke r porjonto sort korte
+
+    sort(s.begin()+l-1, s.begin()+r); //string er l theke r-1 porjonto sort korte
+  
+    vector manupulation
+    mostafa saad er code dekhe nite hobe
+
+    string basic test function
+    vector basic test function
+
+    na bujle cpp reference theke dekhte hobe
+
+    //onno jon er code dekha lagbe
+    debug skill barbe
+
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    return 0;
 }
