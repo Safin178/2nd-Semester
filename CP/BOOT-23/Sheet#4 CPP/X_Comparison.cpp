@@ -1,8 +1,56 @@
-#include<stdio.h>
-#include<string.h>
-#include<math.h>
-#include<stdlib.h>
-#include<limits.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define sz(n) (int)(n).size()
+
+void solve2()
+{
+    string s;
+    cin >> s;
+
+    for(int i = 0; i < sz(s); i++)
+    {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void solve(void)
 {
@@ -34,7 +82,8 @@ int main()
     
     while(t--)
     {
-        solve();
+        //solve(); wa astese
+        solve2();
     }
     return 0;
 }
