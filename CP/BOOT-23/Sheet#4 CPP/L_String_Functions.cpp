@@ -8,24 +8,29 @@ void solve()
     cin >> n >> t;
     
     string s;
+    char p;
     cin >> s;
 
     string x;
     int l ,r;
-
-    for(int i = 0; i <= t; i++)///while(t--) disilam mone kori oita te problem , ekon dekhi eitateo,
+    
+    while(t--)
     {
        
         cin >> x ;
         if(x == "substr")
         {
             cin >> l >> r;
-            cout << s.substr(l-1,r) << "\n";
+            if(l >r) swap(l,r);
+
+            cout << s.substr(l-1,r-l+1) << endl;
+
         }
         else if(x == "sort")
         {
             cin >> l >> r;
-            sort(s.begin()+l-1,s.begin()+r);
+           if(l > r) swap(l,r);
+           sort(s.begin()+l-1, s.begin() +r);
         }
         else if(x == "pop_back")
         {
@@ -38,15 +43,19 @@ void solve()
         else if(x == "reverse")
         {
              cin >> l >> r;
+             
+             if(l > r) swap(l,r);
+
             reverse(s.begin()+l-1, s.begin()+r);
         }
         else if(x == "front")
         {
            cout << s.front() << "\n";
         }
-        else if(x == "push_back")
+        else if(x == "push_back")//push back e ami input ni nai tai jamela hoccilo
         {
-           s.push_back('i');
+            cin >> p;
+           s.push_back(p);
         }
         else if(x == "print")
         {
@@ -56,7 +65,7 @@ void solve()
         }
 
     }
-
+   // cout<< s;
 
 
 
