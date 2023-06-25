@@ -7,73 +7,49 @@ using namespace std;
 void solve2()
 {
     string s;
+    int i=0;
     cin >> s;
-
-    for(int i = 0; i < sz(s); i++)
+    string x,y,z,ans=s;
+    for(int i = 0; i < sz(s)-1; i++)
     {
-        
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void solve(void)
-{
-    char s[100000];
-    scanf("%s", s);
-    int n = strlen(s);
-    int i , j, temp;
-    for( i = 1; i < n; i++)
-    {
-        for( j = 1; j < n; j++)
+        x = s.substr(0, i+1);
+        y=s.substr(i+1);
+        sort(x.begin(), x.end());
+        sort(y.begin(), y.end());
+        z = x + y;
+        if(z < ans)
         {
-            if(s[i] < s[j])
-            {
-                temp = s[i];
-                s[i] = s[j];
-                s[j] = temp;
-            }
+            ans = z;
         }
+        //cout << z << endl;
     }
-
-    printf("%s\n", s);
+    cout << ans;
     
+
 }
+
+// void solve(void)
+// {
+//     char s[100000];
+//     scanf("%s", s);
+//     int n = strlen(s);
+//     int i , j, temp;
+//     for( i = 1; i < n; i++)
+//     {
+//         for( j = 1; j < n; j++)
+//         {
+//             if(s[i] < s[j])
+//             {
+//                 temp = s[i];
+//                 s[i] = s[j];
+//                 s[j] = temp;
+//             }
+//         }
+//     }
+
+//     printf("%s\n", s);
+    
+// }
 
 int main()
 {
