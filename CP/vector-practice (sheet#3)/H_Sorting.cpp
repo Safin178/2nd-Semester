@@ -15,7 +15,7 @@ typedef vector<int> vi;
 #define CNR cout<<"NO\n";return;
 #define vit vector<int>::iterator  
 #define forcin(n) for(auto &x : n) cin>>x;
-#define forcout(n) for(auto x : n) cout << x << " ";cout<<"\n";
+#define forcout(n) for(auto x : n) cout << x << " ";
 void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec(v) likle hobe
 {
 	cout<<s;
@@ -26,17 +26,32 @@ void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec
 
 void solve()
 {
-    int n;
+    int n,temp;
     cin >> n;
     vi v(n);
-    for(auto &x : v) cin >> x;
-    
-    vit it;
 
-    for(auto it= v.rbegin() ; it != v.rend() ; it++)//eikane reverse just 
-    {
-        cout << *it << " ";
+    forcin(v);
+    int t;
+    
+    vit it, is;
+     
+    //sort(v.begin(), v.end());
+
+     for(it = v.begin() ;it != v.end(); it++)//apnar code take modify korsi kaj kortese hehe
+     {
+        for(is = it ; is != v.end()  ; is++)
+        {
+            if(*it>*is){
+
+                temp = *it;
+                *it = *is;
+                *is = temp;
+            }
+        }
     }
+    
+
+    printVec(v);
 
 
 

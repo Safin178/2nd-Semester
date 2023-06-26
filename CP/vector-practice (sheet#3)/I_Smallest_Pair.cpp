@@ -15,7 +15,7 @@ typedef vector<int> vi;
 #define CNR cout<<"NO\n";return;
 #define vit vector<int>::iterator  
 #define forcin(n) for(auto &x : n) cin>>x;
-#define forcout(n) for(auto x : n) cout << x << " ";cout<<"\n";
+#define forcout(n) for(auto x : n) cout << x << " ";
 void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec(v) likle hobe
 {
 	cout<<s;
@@ -26,17 +26,30 @@ void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec
 
 void solve()
 {
-    int n;
+    int n,temp, p;
     cin >> n;
     vi v(n);
-    for(auto &x : v) cin >> x;
-    
-    vit it;
 
-    for(auto it= v.rbegin() ; it != v.rend() ; it++)//eikane reverse just 
+    forcin(v);
+    int t;
+    
+    vit it, is;
+    int min = INT32_MAX;
+    for( it = v.begin(); it != (v.end()-1); it++)
     {
-        cout << *it << " ";
+        for( is = it+1 ; is != v.end(); is++)//it +1 was the one i was missing..
+        {
+            p = *it + *is + (is-v.begin()+1) - (it-v.begin()+1);//j, i 1 index korte hoise tai +1
+            //cout  << *it << *is << endll;
+            if(min > p)
+            {
+                min = p;
+            }
+        }
     }
+    
+    cout << min<<"\n";
+    
 
 
 
@@ -44,7 +57,7 @@ void solve()
 
 int main(){
     int t=1;
-    //cin >> t;          // remove '//' for testcase
+    cin >> t;          // remove '//' for testcase
     while(t--){
         solve();
     }
