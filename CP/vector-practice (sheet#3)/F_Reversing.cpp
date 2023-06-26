@@ -14,6 +14,8 @@ typedef vector<int> vi;
 #define CYR cout<<"YES\n";return;
 #define CNR cout<<"NO\n";return;
 #define vit vector<int>::iterator  
+#define forcin(n) for(auto &x : n) cin>>x;
+
 void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec(v) likle hobe
 {
 	cout<<s;
