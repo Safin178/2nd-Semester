@@ -21,12 +21,19 @@ void solve()
     vi v;
     int i, n;
     cin >> n;
+   
     for( i =0; i < n; i++)
     {
         int x;cin >> x;
         v.push_back(x);
     }
-
+    //experiment : eta input kinto tobo jinish ta kaj kortese
+     /*  vi v(n);
+            for(auto &x : v)
+            {
+                cin >> x;
+            }
+    */
     vi::iterator it;
 
     for(it= v.begin();  it != v.end(); it++)
@@ -34,6 +41,7 @@ void solve()
         if(*it > 0) *it =1;
         else if(*it < 0) *it = 2;
     }
+    
     printVec(v);
 
     
