@@ -34,7 +34,7 @@ void solve2(){
 void solve()
 {
 
-
+    //ami mone hocce parbo tai eta ar korlam na
 
 
 
