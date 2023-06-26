@@ -50,3 +50,23 @@ int main(){
     }
     return 0;
 }
+
+
+void solve2(){
+    int n,i;
+    cin >> n;
+    vi arr(n);
+    vi::iterator it;
+    for(auto &x : arr){
+        cin >> x;
+        if(x<0){
+            cout << '2' << " ";
+        }
+        else if(x>0){
+            cout << '1' << " ";
+        }
+        else{
+            cout << '0' << " ";
+        }
+    }
+}
