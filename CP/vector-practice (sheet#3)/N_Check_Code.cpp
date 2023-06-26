@@ -33,12 +33,20 @@ void solve()
     forcin(v);
     vector<char>::iterator it;
 
-    if(*(v.begin()+a) != '-') {cout << "No\n";return;}
+    if(*(v.begin()+a) != '-' ) {cout << "No\n";return;}
     else
-    for(it = v.begin(); it != v.end(); it++)
+    for(it = v.begin(); it != v.begin()+a; it++)
     {
-        if(it == v.begin()+a)continue;
-        if(*it >='9' && *it <= '0')
+       // if( *(v.begin()+a) == '-')continue;
+        if(*it >'9' || *it < '0')
+        {
+            cout << "No\n";
+            return ;
+        }
+    }
+    for(it = v.begin()+a+1; it != v.end(); it++)
+    {
+        if(*it > '9' || *it < '0')
         {
             cout << "No\n";
             return ;

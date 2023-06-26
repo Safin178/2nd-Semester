@@ -14,8 +14,8 @@ void solve2(){
 
     forcin(arr);
 
-    int min=arr[0];
-    int max=arr[0];
+    int min=INT32_MAX;
+    int max=INT32_MIN;
     for(it=arr.begin();it!=arr.end();it++){
         if(min>*it){
             p1=it;
