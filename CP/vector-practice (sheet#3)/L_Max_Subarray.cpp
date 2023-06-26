@@ -38,7 +38,7 @@ void solve()
     {
         for(jt = it; jt != v.end() ;jt++)
         {
-            int p = INT32_MIN;
+            int p = INT32_MIN; 
             for(kt = it; kt <= jt; kt++ )
             {
                 if(p  < v[kt-v.begin()])
