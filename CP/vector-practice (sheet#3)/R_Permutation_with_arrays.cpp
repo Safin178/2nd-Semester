@@ -50,16 +50,16 @@ void solve()
 
 int main(){
     int t=1;
-    //cin >> t;          // remove '//' for testcase
+    //cin >> t;          //* remove '//' for testcase
     while(t--){
         solve();
     }
     return 0;
 }
 
-// another nasty way
+// * another nasty way
 
-//? even i don't like it ..
+// ! even i don't like it ..
 
 void solve_2(){
     int n,f=1;
