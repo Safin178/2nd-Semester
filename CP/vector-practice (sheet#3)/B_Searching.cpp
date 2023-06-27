@@ -20,7 +20,7 @@ void solve()
 {
     int n, i ,x;
     cin >> n;
-    vi v;
+    vi v(n);
     vi::iterator it;//obuuuukkkk
 
     for( i = 0; i < n; i++)
