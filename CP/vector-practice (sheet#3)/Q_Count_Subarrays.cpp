@@ -56,14 +56,14 @@ void solve2()
 
     forcin(arr);
     vi w;
-    for(it = arr.begin() ; it != arr.end(); it++)
+    for(it = arr.begin() ; it != arr.end(); it++) // i = 0 ; i < n ; i++
     {
-        for(is = it ;is != arr.end(); is++)
+        for(is = it ;is != arr.end(); is++) // j = i ; j < n; j++
         {
             int f=0;
             v.clear();
            
-            for(in = it;in <= is; in++)
+            for(in = it;in <= is; in++) // k = i; k <= j; k++
             {
                 v.push_back(*in);
             }
