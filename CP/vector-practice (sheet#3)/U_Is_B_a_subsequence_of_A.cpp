@@ -23,7 +23,7 @@ void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec
 			cout<<v2[i]<<" ";
 		cout<<"\n";
 }
-
+void sub_seq_print();
 void solve()
 {
     int a ,b;
@@ -79,7 +79,43 @@ int main(){
     int t=1;
     //cin >> t;          // remove '//' for testcase
     while(t--){
-        solve();
+        //solve();
+        sub_seq_print();
+
     }
     return 0;
+}
+
+void sub_seq_print()//with vec but i will access it like array
+{
+    int n;
+    cin >> n;
+
+    vi a(n);
+    forcin(a);
+    int i , j , k;
+
+     cout << a[0] << endll;
+
+    for(k = 0 ; k < n;k++)
+    {
+
+        
+        //cout << a[k] << endll;
+
+        for(i = k ; i < n; i++)
+        {
+            
+            for(j = n-1; j >= k ; j--)
+            {
+                if(j == i && i != n-1) continue;
+                cout << a[n-j-1+k] << " ";
+            }
+            cout << endll;
+        }
+    } 
+    cout << endll;
+
+    
+
 }
