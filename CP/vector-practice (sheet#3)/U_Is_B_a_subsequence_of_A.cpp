@@ -60,7 +60,7 @@ void solve()
         }
     }
 
-    for(it = p.begin() ; (it - p.begin()) < sz(p)-1 ; it++ )
+    for(it = p.begin() ; (it - p.begin()) < sz(p)-1 ; it++ ) //check non decreasing kina
     {
         if(*it >= *(it+1))
         {
