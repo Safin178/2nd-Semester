@@ -30,7 +30,7 @@ void solve()
     cin >> a >> b;
     vi v(a);
     vi v2(b);
-    vi p; // ! eta important
+    vi p; // ! eta important eikane p(b) disilam pore keyal korlam je b size er shob 0 create hocce ar pushback oi 0 er por hocce
     for(auto &x : v) cin >> x;
 
     forcin(v2);
