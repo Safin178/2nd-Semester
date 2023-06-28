@@ -24,7 +24,7 @@ void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec
 		cout<<"\n";
 }
 
-void solve()// this is TLE 
+void solve()// ! this is TLE 
 {
     int n, m;
     cin >> n >> m;
