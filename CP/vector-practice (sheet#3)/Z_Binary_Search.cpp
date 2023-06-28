@@ -32,7 +32,7 @@ void solve()
     for(auto &x : v) cin >> x;
     
 
-    sort(v.begin() , v.end());
+    sort(v.begin() , v.end());//sort(all(v));
     vit it = v.begin();
     while(q--)
     {
