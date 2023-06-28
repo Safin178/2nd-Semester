@@ -24,6 +24,7 @@ void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec
 		cout<<"\n";
 }
 void sub_seq_print();
+void solve_cupcode_sub_seq();
 void solve()
 {
     int a ,b;
@@ -79,8 +80,9 @@ int main(){
     int t=1;
     //cin >> t;          // remove '//' for testcase
     while(t--){
-        //solve();
-        sub_seq_print();
+        solve();
+        //sub_seq_print();
+       // solve_cupcode_sub_seq();
 
     }
     return 0;
@@ -118,4 +120,26 @@ void sub_seq_print()//with vec but i will access it like array
 
     
 
+}
+
+void solve_cupcode_sub_seq(){
+    int n,m,i,j;
+    cin >> n;
+    vi arr(n);
+    vi::iterator it;
+
+    forcin(arr);
+
+    for(i=0;i<n;i++){
+        for(j=i;j<n;j++){
+
+            if(i==j) cout << arr[i] << " " << endl;
+
+            else cout << arr[i] << " " << arr[j] << " " << endl;
+        }
+        for(int k=i;k<j;k++){
+            cout << arr[k] << " ";
+        }
+        cout << endl;
+    }
 }
