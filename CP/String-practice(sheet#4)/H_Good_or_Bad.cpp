@@ -39,8 +39,8 @@ void solve()
     //https://cplusplus.com/reference/string/string/
     //though ami dekhi nai uporer ta , saad bhai er ta deksi
 
-    // x=s.find(a1);
-    //     y=s.find(a2); eirokom dileo kaj korto 0 oita dewa lagto na
+    // x=s.find("101");
+    //     y=s.find("010"); eirokom dileo kaj korto 0 oita dewa lagto na
 
 }
 
