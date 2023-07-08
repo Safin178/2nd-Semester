@@ -23,8 +23,27 @@ void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec
 			cout<<v2[i]<<" ";
 		cout<<"\n";
 }
-
 void solve()
+{
+    string s;
+    getline(cin , s);
+    int k = 0, i;
+    for(int i = 0 ; i < sz(s) ; i++)
+    {
+        if(s[i] == ' ')
+        {
+            reverse(s.begin()+k,s.begin()+i);
+            k = i+1;
+        }
+    }
+
+    
+   reverse(s.begin()+k,s.end());
+
+    cout << s;
+}
+
+void trash()
 {
     string s;
     getline(cin , s);
@@ -35,8 +54,13 @@ void solve()
     {
         
         r[j] = s[i];
-        
-        if(s[i] == ' ')
+        if( ((s[i]<='Z' && s[i]>='A') || s[i]>='a' && s[i]<='z'))
+        {
+            j++;
+           continue;
+           
+        }
+        else if(s[i] == ' ')
         {
             while(j--)
             {
@@ -44,7 +68,7 @@ void solve()
             }
             cout << " ";
         }
-        else if(s[i] != '\0'){j++;continue;}
+       
         else if(s[i] == '\0')
         {
             while(j--)
