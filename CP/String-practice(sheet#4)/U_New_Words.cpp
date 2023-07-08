@@ -72,6 +72,9 @@ void solve2()
    
 
    cout << min;
+
+   
+
 }
 int main(){
     int t=1;
