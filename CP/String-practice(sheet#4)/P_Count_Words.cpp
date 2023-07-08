@@ -1,22 +1,39 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
-typedef long long ll;
-typedef vector<ll> vl;
-#define forcin(n) for(auto &x : n) cin >> x
-#define forcout(n) for(auto x : n) cout << x << " "
-#define sz(n) (int)n.size()
-#define el endl
+#define ll long long
+#define sz(n) (int)(n).size()
+void solve()
+{
 
-void printVec(vector<int> v , string s=""){
-    cout << s;
-    for(int i=0;i<(int)v.size();i++)
-        cout << v[i] << " ";
-    cout << "\n";
+    string s;//matha karap kori dewar moto ekta problem
+    getline(cin,s);
+    int i ,cnt = 1, f = 0;
+    for( i = 0; i<sz(s) ; i++)
+    {
+        if(((s[i] <= 'z') && (s[i] >= 'a')) || ((s[i] <= 'Z') && (s[i] >= 'A')))
+        {
+            f = 1;
+        }
+
+        if((f==1) &&((((s[i+1] <= 'z') && (s[i+1] >= 'a')) || ((s[i+1] <= 'Z') && (s[i+1] >= 'A')))) && ( (s[i] == ' ') || (s[i] == '!') || (s[i] == '.') || (s[i] == ',' )|| (s[i] == '?')))
+        {
+            cnt++;
+        }
+       
+    }
+    //if(!((s[i+1] <= 'z') && (s[i+1] >= 'a')) || ((s[i+1] <= 'Z') && (s[i+1] >= 'A')))cnt--;
+    
+    cout << cnt;
+
+   
+
+
+
+
 }
 
-void solve(){
+void solve2_cupcode(){
     string s;
     getline(cin,s);
     int i,cnt=0, f=0,c=0;
@@ -40,7 +57,7 @@ void solve(){
 
 int main(){
     int t=1;
-    //cin >> t;          // remove '//' for testcase
+    //cin >> t;          // removr '//' for testcase
     while(t--){
         solve();
     }

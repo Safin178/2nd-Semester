@@ -16,7 +16,26 @@ void printVec(vector<int> v , string s=""){
     cout << "\n";
 }
 
-void solve(){
+void solve_cupcode(){
+    int n,i,j,a[26]={};
+    cin >> n;
+    char c;
+    for(i=0;i<n;i++){
+        cin >> c;
+        a[c-'a']++;
+    }
+    for(i=0;i<26;i++){
+        if(a[i]!=0){
+            for(j=0;j<a[i];j++){
+                cout << (char)(i+'a');
+            }
+        }
+    }
+    cout << el;
+
+}
+
+void solve(){// ! MLE
     int n,i,j,a[26]={0};
     cin >> n;
     string s;
@@ -41,7 +60,7 @@ int main(){
     int t=1;
     //cin >> t;          // remove '//' for testcase
     while(t--){
-        solve();
+        solve_cupcode();
     }
     return 0;
 }
