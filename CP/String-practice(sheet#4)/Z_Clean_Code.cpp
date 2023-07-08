@@ -36,6 +36,7 @@ void solve()
         i++;
         
     }
+    
     cout << a;
     
 
