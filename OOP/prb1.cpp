@@ -8,7 +8,7 @@ class Circle {
     public:
     int radius;
 
-    void Setradius(int r) {
+    void Setradius(int r) { 
         radius = r;
     }
 
@@ -16,18 +16,16 @@ class Circle {
         return 3.14159 * radius * radius;
     }
 
-    void details()
-    {
+    void details(){
         cout << "Radius = " << radius << "\n";
         cout << "Area = " << Cal_area() << "\n";
     }
-    
+
 
 
 };
 
-int main()
-{
+int main(){
    Circle a;
 
    a.Setradius(5);
