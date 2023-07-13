@@ -5,20 +5,20 @@ using namespace std;
 //https://telegra.ph/Assignment-1-1221-07-12
 
 class Circle {
+    
+    double radius;
     public:
-    int radius;
-
-    void Setradius(int r) { 
+    void Setradius(double r) { 
         radius = r;
     }
 
     double Cal_area(){
-        return 3.14159 * radius * radius;
+        return (3.14159 * (radius) * (radius));
     }
 
     void details(){
         cout << "Radius = " << radius << "\n";
-        cout << "Area = " << Cal_area() << "\n";
+        cout << "Area = " << fixed << setprecision(2) <<  Cal_area() << "\n";
     }
 
 
@@ -27,8 +27,9 @@ class Circle {
 
 int main(){
    Circle a;
+   double n ; cin >> n;
 
-   a.Setradius(5);
+   a.Setradius(n);
 
    a.details();
 
