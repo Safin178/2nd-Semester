@@ -5,7 +5,7 @@ using namespace std;
 
 
 class Student{
-        private : // ig eta na likleo colbe by default jeheto private thake
+        private : // ig eta na likleo colbe ,by default jeheto private thake
         string name;
         string ID;
         public:
@@ -17,7 +17,6 @@ class Student{
         void setID(string id){
             ID = id;
         }
-
         
         string getname()
         {
