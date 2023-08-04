@@ -51,7 +51,7 @@ void solve()
         }
          p.pb(v[i] % k);
      }
-     printVec(p,"here : ");
+     //printVec(p,"here : ");
      vit it ;
      for(int i = 0; i < sz(p)- cnt; i++)
      {

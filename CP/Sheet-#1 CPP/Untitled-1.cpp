@@ -1,52 +1,20 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-typedef vector<long long> vl;
-typedef vector<int> vi;
-
-#define all(v)	((v).begin()), ((v).end())
-#define sz(v)	((int)((v).size()))
-#define ll long long
-#define pb push_back
-#define nl '\n'
-#define yes cout<<"YES\n"
-#define no cout<<"NO\n"
-#define yesR cout<<"YES\n";return;
-#define noR cout<<"NO\n";return;
-#define vit vector<int>::iterator  
-#define forcin(n) for(auto &x : n) cin>>x;
-#define forcout(n) for(auto x : n) cout << x << " ";
-void printVec(vector<int> v2, string s = "")//vector ke print kore just printVec(v) likle hobe
+#include<stdio.h>
+int main()
 {
-	cout<<s;
-	for (int i = 0; i < (int)v2.size(); ++i)
-			cout<<v2[i]<<" ";
-		cout<<"\n";
-}
+    double A,B,C,X,Y,Z,I,J;
+    scanf("%lf%lf%lf",&A,&B,&C);
+    X=((1/2)*(A*C));
+    Y=(3.14159*(C*C));
+    Z=((1/2)*(A+B)*C);
+    I=(B*B);
+    J=(A*B);
 
-void solve()
-{
-    string s;
-    cin >> s;
+   printf ("TRIANGULO: %.3lf\n",X);
+   printf("CIRCULO: %.3lf\n ",Y);
+   printf("TRAPEZIO: %.3lf\n",Z);
+   printf("QUADRADO: %.3lf\n",I);
+   printf("RETANGULO: %.3if\n",J);
 
-    for(int i = 0 ;i < sz(s); i++)
-    {
-        if(s[i] >= '0' && s[i] <= '9')
-        {
-            cout << s[i] ;
-        }
-    }
-    cout << s[sz(s)-1] << nl;
+   return 0;
 
-
-
-}
-
-int main(){
-    int t=1;
-    cin >> t;          // remove '//' for testcase
-    while(t--){
-        solve();
-    }
-    return 0;
 }
