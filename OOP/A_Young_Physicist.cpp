@@ -24,3 +24,4 @@ int main(){
     a.set(l,w);
     a.print();
     return 0;
+}

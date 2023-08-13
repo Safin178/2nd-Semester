@@ -6,8 +6,10 @@ class flower{
 public:
     flower(int PL, int LL)
     {
-        PL = PL;
-        LL = LL;
+       // PL = PL;
+        this.PL = PL;
+        //LL = LL;
+        this.LL = LL;
     }
     void show(){
 
