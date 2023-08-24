@@ -31,7 +31,12 @@ int main()
     f1.show();
     return 0;
 }
-explain : jani na , ki liktam
+explain : 
+
+  flower(int PL ,int LL){ 
+        this -> PL = PL; // error found:there are same variable more than once for that reason we have to use this keyword  
+        this -> LL = LL; // which is a pointer pointing to the private variable "this" keyword store the address of current object 
+  }
 
 */
 
@@ -165,3 +170,48 @@ int main()
    return 0;
 }
 */
+
+// ! 3a ----------- ------------------- ------------------ ---------------------------------------------------------
+
+//confused  
+#include<iostream>
+using namespace std;
+
+class Employee{
+    
+    int id, salary;
+    public:
+    
+    Employee(int x, int y)
+    {
+         id = x;
+         salary = y;
+    }
+    Employee( Employee &E2)
+    {
+     id = E2.id;
+     salary = E2.salary;  
+     //cout << "HI" << endl; 
+    }
+    void setid(int x)
+    {
+        salary = x;
+    }
+    int getid()
+    {
+        return id;
+    }
+    int getsalary()
+    {
+        return salary;
+    }
+};
+
+int main()
+{
+  Employee E1(10,3000);
+  Employee E2=E1;
+    cout << E1.getid() << "  " << E1.getsalary() << endl;
+    cout << E2.getid() << "  " << E2.getsalary() << endl;
+   return 0;
+}

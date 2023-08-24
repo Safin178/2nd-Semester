@@ -9,7 +9,7 @@ class Employee{
     Employee(int id, int salary)
     {
         this-> id = id;
-        this->salary = salary;
+        this-> salary = salary;
     }
     Employee(Employee &x)
     {
