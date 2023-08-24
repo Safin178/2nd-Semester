@@ -6,13 +6,13 @@ class flower{
 public:
     flower(int PL, int LL)
     {
-        PL = PL;
-        LL = LL;
+        this -> PL = PL;
+        this -> LL = LL;
     }
-    void show(){
+    void show()
+    {
 
         cout << PL << " " << LL << endl;
-
     }
 
 
