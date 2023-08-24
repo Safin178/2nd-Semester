@@ -28,7 +28,7 @@ int main()
 */
 
 // ! 2C
-
+/*
 #include<bits/stdc++.h>
 using namespace std;
 class Time{
@@ -67,7 +67,8 @@ int main()
   
    
    return 0;
-}
+} 
+*/
 
 
 
