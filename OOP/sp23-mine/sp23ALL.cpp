@@ -18,13 +18,15 @@ public:
     }
 
 
-};//
+};
 int main()
 {
     flower f1(12,10), f2(1,55);
     f1.show();
     return 0;
 }
+explain : jani na , ki liktam
+
 */
 
 // ! 2C
@@ -36,11 +38,15 @@ class Time{
    int hour , minutes;
    public:
   /*
-   Time(int x, int y)// ! eibabe o likte partam consturctor ta
+   Time(int x, int y) // ! eibabe o likte partam consturctor ta
    {
        hour = x;
        minutes = y;
-   }*/
+   }
+   
+   *//* 
+   
+   //! arek biroktikor ena comment gula
    
         Time(int hour , int minutes)
         {
@@ -48,7 +54,7 @@ class Time{
             this -> minutes = minutes;
         }
    
-    friend void addTime(Time ,Time );// ? private data o access korte partese //tarpor object name na likleo run kortese
+    friend void addTime(Time ,Time ); // ! private data o access korte partese //tarpor object name na likleo run kortese
 };
  
  void addTime(Time t1, Time t2)
@@ -70,5 +76,36 @@ int main()
 } 
 */
 
+//! 2D
+/*
+#include<bits/stdc++.h>
+using namespace std;
+class Student{
+
+    int x;
+    public:
+    void get()
+    {
+        
+        cin >> x; // ami 1st e int y likhe then cin >> y; x = y korsilam kinto dekhi eirokom o likha jai
+        
+        cout << x << endl;
+    }
+};
+
+int main()
+{
+  Student a[100];
+
+  for(int  i= 0 ;  i < 5 ; i++)//i < 100 hobe ami test er jonno 5 liksi
+  {
+    a[i].get();
+  }
+
+
+
+   return 0;
+}
+*/
 
 
