@@ -47,7 +47,7 @@ int main()
 */
 
 //! 1d or -----------------------------------------------------------------------------------------------------------------
-
+/*
 // CPP
 #include<iostream>
 using namespace std;
@@ -71,6 +71,9 @@ int main()
 
    return 0;
 }
-//expalin : The error in the code is in the show(). Since show() is a member function of the 
-//          student class, it should be defined inside the class. (ezaz bhai)
-// or we could use scope resulation oparator( :: ) to define the function show() outside of the class
+// !expalin : The error in the code is in the show(). Since show() is a member function of the 
+//          student class, it should be defined inside the class. (Ezaz bhai)
+//          or we could use scope resulation oparator( :: )
+//          to define the function show() outside of the class
+
+*/
