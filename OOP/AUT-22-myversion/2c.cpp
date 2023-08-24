@@ -10,17 +10,7 @@ class student
 
      string x;
 
-
 };
-
-/*
-    bujchi 
-     
-
-*/
-
-
-
 int main()
 {
   student a = { 89, "hi"} ;
