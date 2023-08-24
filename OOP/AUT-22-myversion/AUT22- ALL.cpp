@@ -46,3 +46,28 @@ int main()
 
 */
 
+//! 1d or -----------------------------------------------------------------------------------------------------------------
+
+// CPP
+#include<iostream>
+using namespace std;
+class student
+{
+    
+    public:
+    void show();
+};
+void student::show()
+{
+    cout << a << endl;
+}
+
+int main()
+{
+  student a;
+  a.show();
+   return 0;
+}
+//expalin : The error in the code is in the show(). Since show() is a member function of the 
+//          student class, it should be defined inside the class. (ezaz bhai)
+// or we could use scope resolation oparator( :: ) to define the func show() outside of the class

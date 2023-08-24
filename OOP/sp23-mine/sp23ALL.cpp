@@ -130,7 +130,7 @@ int main()
 
 
 //! 2D or ---------------- ----------------------- ------------------------- ---------------------- 
-/*
+
 #include<bits/stdc++.h>
 using namespace std;
 class Employee{
@@ -142,16 +142,17 @@ class Employee{
     public:
     void get()
     {
-        cin >> name;
+        //cin >> name;
+        getline(cin,name);//keeping in mind that name o space hoile tai getline
         cin >> year;
-        //cin.ignore(); //! babsilam eta dite hobe kinto na dileo hocce
+       cin.ignore(); //! dite hobe karon input kirokom dicce jani na
         getline(cin ,address); //getline karon address e space takte pare
         
     }
 
     void display()
     {
-        cout << name << "   " << year << "  " << address << endl;
+        cout << name << "  " << year << "  " << address << endl;
     }
 };
 
@@ -169,10 +170,10 @@ int main()
 
    return 0;
 }
-*/
+
 
 // ! 3a ----------- ------------------- ------------------ ---------------------------------------------------------
-
+/*
 //confused  
 #include<iostream>
 using namespace std;
@@ -215,3 +216,4 @@ int main()
     cout << E2.getid() << "  " << E2.getsalary() << endl;
    return 0;
 }
+*/
