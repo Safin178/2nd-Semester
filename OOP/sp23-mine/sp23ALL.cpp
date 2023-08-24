@@ -1,4 +1,10 @@
-// ! 2b
+// * i use an extension in VS code , name: better comments, install it then you will understand comments better
+//Name: Better Comment VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+
+//? SOLVE :
+
+// ! 2b---------------------------------------------------------------------------------------------
 /*
 #include<iostream>
 using namespace std;
@@ -29,7 +35,8 @@ explain : jani na , ki liktam
 
 */
 
-// ! 2C
+
+// ! 2C ----------------------------------------------------------------------------------
 /*
 #include<bits/stdc++.h>
 using namespace std;
@@ -76,7 +83,14 @@ int main()
 } 
 */
 
-//! 2D
+
+
+
+//! 2D---------------------------------------------------------------------------  ------------------------------------
+
+
+
+
 /*
 #include<bits/stdc++.h>
 using namespace std;
@@ -97,7 +111,7 @@ int main()
 {
   Student a[100];
 
-  for(int  i= 0 ;  i < 5 ; i++)//i < 100 hobe ami test er jonno 5 liksi
+  for(int  i= 0 ;  i < 5 ; i++) //i < 100 hobe ami test er jonno 5 liksi
   {
     a[i].get();
   }
@@ -106,6 +120,48 @@ int main()
 
    return 0;
 }
+
 */
 
 
+//! 2D or ---------------- ----------------------- ------------------------- ---------------------- 
+/*
+#include<bits/stdc++.h>
+using namespace std;
+class Employee{
+
+    string name;
+    int year;
+    int salary; // ! salary output ei nai tai nicci na input
+    string address;
+    public:
+    void get()
+    {
+        cin >> name;
+        cin >> year;
+        //cin.ignore(); //! babsilam eta dite hobe kinto na dileo hocce
+        getline(cin ,address); //getline karon address e space takte pare
+        
+    }
+
+    void display()
+    {
+        cout << name << "   " << year << "  " << address << endl;
+    }
+};
+
+int main()
+{
+  Employee a[100];
+
+  for(int  i= 0 ;  i < 2 ; i++) //i < 100 hobe ami test er jonno 2 liksi
+  {
+        a[i].get();
+        a[i]. display();
+  }
+
+
+
+   return 0;
+}
+*/
