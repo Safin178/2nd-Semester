@@ -23,7 +23,7 @@ public:
 }*/
 
 /*
-// ! ans :
+//// ! ans :
 #include<iostream>
 using namespace std;
 
@@ -53,8 +53,9 @@ int main()
 using namespace std;
 class student
 {
-    
-    public:
+    int a = 5;
+public:
+    float f;
     void show();
 };
 void student::show()
@@ -64,10 +65,12 @@ void student::show()
 
 int main()
 {
-  student a;
-  a.show();
+  student s1;
+  s1.f = 2.5;
+  s1.show(); //output 5
+
    return 0;
 }
 //expalin : The error in the code is in the show(). Since show() is a member function of the 
 //          student class, it should be defined inside the class. (ezaz bhai)
-// or we could use scope resolation oparator( :: ) to define the func show() outside of the class
+// or we could use scope resulation oparator( :: ) to define the function show() outside of the class
