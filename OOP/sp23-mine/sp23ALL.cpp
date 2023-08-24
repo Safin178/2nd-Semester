@@ -216,4 +216,24 @@ int main()
     cout << E2.getid() << "  " << E2.getsalary() << endl;
    return 0;
 }
+
+*/
+// 3b or ---------------------------------         ---------------------------
+
+/*// incomplete
+#include<iostream>
+using namespace std;
+
+void pri(int z =0,int x){ //eikane z = 0 tai eta use
+    cout << x <<endl;
+}
+
+void pri(int a){
+    cout << a <<endl;
+}
+
+int main(){
+    pri(5);
+    return 0;
+}
 */
