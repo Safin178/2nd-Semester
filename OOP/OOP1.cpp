@@ -1,26 +1,47 @@
 #include<iostream>
+#include<string.h>
 using namespace std;
-class flower{
-
-    int PL, LL;
+class employee
+{
+private:
+    int year;
+    string name,address;
 public:
-    flower(int PL, int LL)
-    {
-        this -> PL = PL;
-        this -> LL = LL;
-    }
-    void show()
-    {
+    void input(){
+    cin>>year;
+    cin>>name;
 
-        cout << PL << " " << LL << endl;
+   getline(cin,address);
+    //cin>>address;
+
+
     }
+
+    void display(){
+
+
+    cout<<name<<" "<<year<<" "<<address<<endl;
+
+    }
+
 
 
 };
+int main(){
 
-int main()
-{
-    flower f1(12,10), f2(1,55);
-    f1.show();
-    return 0;
+employee a[2];
+for(int i=0;i<2;i++){
+
+    a[i].input();
+}
+for(int i=0;i<2;i++){
+
+
+    a[i].display();
+
+}
+
+return 0;
+
+
 }
