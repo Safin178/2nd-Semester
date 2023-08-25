@@ -130,7 +130,9 @@ class X
     int x;
     public:
     X(){}
-    X(int x){x = x;}
+    X(int x){
+        this -> x = x;
+        }
     void show(){
         cout << x << endl;
     }
@@ -148,5 +150,28 @@ int main()
 
 
 
+#include<iostream>
+using namespace std;
 
+class X{
+    int x,y;
+    public:
+    //1st
+    X(){}
+    //2nd
+    X(int a,int b=0 ){
+        x=a;
+        y=b;
+    }
+    void show(){
+        cout << x << endl;
+        cout << y << endl;
+    }
+};
+
+int main(){
+    X s1,s2(3);
+    s2.show();
+    s1.show();
+}
 
