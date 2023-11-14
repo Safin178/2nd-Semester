@@ -107,32 +107,29 @@ void faltu( T a[], int n ) {
                 cerr << endl;
 }
 
-template <typename T, typename ... hello>
-void faltu( T arg, const hello &... rest) {
-            cerr << arg << ' ';
+template <typename T, typename ... hello>void faltu( T arg, const hello &... rest) {cerr << arg << ' ';
                 faltu(rest...);
 }
- 
-
 /*____________________________________________________________________________________________________________________________________*/
-
-
-
 void solve(){
-    ll a ,b , n;
-    cin >> a >> b >> n;
-    if(a > b)swap(a,b);
-     a--;
-    a = a / n;
-    b = b / n;
-    /*sir je ta bolsilo 1 to n er modde x koibar bag jai == n / x, 1 to 20 er modde 3 diye vag jai floor(20/3) == 6 ta number */
-   
-    cout << 1LL*((n*(b*(b+1)/2)) - (n*(a*(a+1)/2))) << nl;
-
+    int n, x; cin >> n;
+    vi v(n);
+    forcin(v);
+    int ans = 0;
+    for(int i = 0; i < sz(v); i++){
+        x = i + 1;
+        if( x < 10){
+            if( v[i] >= x)ans++; 
+            if( v[i] >= ((x*10)+x)) ans++; 
+        }
+        else if((x%10) == (x/10)) {
+            if(v[i] >= (x%10)) ans++;
+            if(v[i] >= x) ans++;
+        }
+    }
+    cout << ans << nl;
 }
-
 int main(){
-    
     bismillah
     int t=1;
     //cin >> t;          // remove '//' for testcase

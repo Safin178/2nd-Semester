@@ -119,15 +119,18 @@ void faltu( T arg, const hello &... rest) {
 
 
 void solve(){
-    ll a ,b , n;
-    cin >> a >> b >> n;
-    if(a > b)swap(a,b);
-     a--;
-    a = a / n;
-    b = b / n;
-    /*sir je ta bolsilo 1 to n er modde x koibar bag jai == n / x, 1 to 20 er modde 3 diye vag jai floor(20/3) == 6 ta number */
-   
-    cout << 1LL*((n*(b*(b+1)/2)) - (n*(a*(a+1)/2))) << nl;
+    int a, b, c;
+    cin >> a >> b >> c;
+    double s = (a + b + c)/2;
+    if((a+b) > c && (b+c) > a && (c+a) > b)
+    {
+        cout << "Valid\n";
+        set_pre(6);
+        cout << sqrt(s * (s -a) * (s - b) * (s - c));
+        return;
+    }
+    cout << " Invalid\n";
+    
 
 }
 

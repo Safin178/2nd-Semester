@@ -32,7 +32,7 @@ const double PI = acos(-1);
 const double eps = 1e-9;
 
 void printVec(vector<int> v , string s=""){
-    cout << s <<' ';
+    cout << s;
     for(int i=0;i<(int)v.size();i++)
         cout << v[i] << " ";
     cout << "\n";
@@ -107,11 +107,7 @@ void faltu( T a[], int n ) {
                 cerr << endl;
 }
 
-template <typename T, typename ... hello>
-void faltu( T arg, const hello &... rest) {
-            cerr << arg << ' ';
-                faltu(rest...);
-}
+template <typename T, typename ... hello>void faltu( T arg, const hello &... rest) {cerr << arg << ' ';faltu(rest...);}
  
 
 /*____________________________________________________________________________________________________________________________________*/
@@ -119,15 +115,32 @@ void faltu( T arg, const hello &... rest) {
 
 
 void solve(){
-    ll a ,b , n;
-    cin >> a >> b >> n;
-    if(a > b)swap(a,b);
-     a--;
-    a = a / n;
-    b = b / n;
-    /*sir je ta bolsilo 1 to n er modde x koibar bag jai == n / x, 1 to 20 er modde 3 diye vag jai floor(20/3) == 6 ta number */
-   
-    cout << 1LL*((n*(b*(b+1)/2)) - (n*(a*(a+1)/2))) << nl;
+    int n;//21
+    cin >> n;
+    vector<int>v[n+1];
+    if(n==1)
+    {
+        cout << 1 << nl;
+        return;
+    }
+    
+v[0].pb(1);
+v[1].pb(1);
+v[1].pb(1);
+cout << 1 << nl << 1<< " " << 1 << nl;
+
+    for(int i = 1; i < n-1; i++)
+    {
+       // cout <<1 << " ";
+        v[i+1].pb(1);
+        for(int j = 0; j < sz(v[i])-1; j++)
+        {
+            v[i+1].pb(v[i][j]+v[i][j+1]);
+        }
+         v[i+1].pb(1);
+         printVec(v[i+1]);
+    }
+    
 
 }
 

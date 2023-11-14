@@ -128,40 +128,38 @@ bool isprime(ll x)
 
 
 void solve(){
-    vector<pii>v;
-    ll n, k;
+    vector<pii>v; //37+18
+    vi k;
+    ll n;
     cin >> n;
-    ll cnt =0;
-    for(int i = 2;  n!=1; )
-    {
-       // ll cnt = 0;
-        if(isprime(i))
-        {
-                if(n % i != 0 ){
-                    i++;
-                    if(cnt > 0)
-                    {
-                        v.pb({i,cnt});
-                        cnt = 0;
-                    }
-                }
-                n = n/i;
-                cnt++;
-        }
-       
-        //i++;
-    }
-   // dbg(v);
-   
-   if(sz(v) == 0)
-   {
+      ll cnt = 0;
+      if(isprime(n))
+      {
         cout << '(' << n<<'^' << 1<<')'<<nl;return;
-   }
-   for(int i = 0; i < sz(v)-1; i++)
+      }
+    map<int,int>m;
+    for(int i = 2;  1; )
+    {
+        if(n % i == 0 )
+         {
+                        m[i]++;
+                        n = n/i;
+        }
+         else i++;
+        if( n == 1)
+        {
+            break;
+        }
+    }
+    //dbg(m);
+    
+   
+    auto u = --m.end();
+   for(auto i = m.begin(); i != (--m.end()); i++)
    {
-        cout << '(' << v[i].F<<'^' << v[i].S<<')'<<'*';
+        cout << '(' << (*i).F<<'^' << (*i).S<<')'<<'*';
    }
-     cout << '(' << v.back().F<<'^' << v.back().S<<')'<<nl;
+     cout << '(' << (*u).F<<'^' << (*u).S<<')'<<nl;
     
 
 }

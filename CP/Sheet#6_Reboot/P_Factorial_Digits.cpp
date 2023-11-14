@@ -119,12 +119,22 @@ void faltu( T arg, const hello &... rest) {
 
 
 void solve(){
-    ll n;
+    ll n;//51
     cin >> n;
-    ll x = log10(n);
-    cout << "Number of digits of "<<n<<"! is ";
-    cout << x+1<<nl;
-    
+   
+   cout << "Number of digits of "<<n<<"! is ";
+   
+    double sum =0;
+    for(int i =1; i<=n; i++)
+    {
+        sum += log10(i);
+       
+    }
+    cout << ceil(sum)<<nl ;
+     /*
+     if this gets AC i don't know what ill do , obaji i am nervous
+     1:55 am and i am doing this > _ <
+     */
 
 }
 

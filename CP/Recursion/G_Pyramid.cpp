@@ -116,18 +116,20 @@ void faltu( T arg, const hello &... rest) {
 
 /*____________________________________________________________________________________________________________________________________*/
 
-
+void pri(int x, int u)
+{
+    if(x <0)return;
+    for(int i = 0; i < x ; i++)cout << " ";
+    for(int i = 0; i < u; i++)cout <<"*";
+    cout << nl;
+    pri(x-1,u+2);
+}
 
 void solve(){
-    ll a ,b , n;
-    cin >> a >> b >> n;
-    if(a > b)swap(a,b);
-     a--;
-    a = a / n;
-    b = b / n;
-    /*sir je ta bolsilo 1 to n er modde x koibar bag jai == n / x, 1 to 20 er modde 3 diye vag jai floor(20/3) == 6 ta number */
-   
-    cout << 1LL*((n*(b*(b+1)/2)) - (n*(a*(a+1)/2))) << nl;
+
+    int n;
+    cin >> n;
+    pri(n-1,1);
 
 }
 

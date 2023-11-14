@@ -115,19 +115,23 @@ void faltu( T arg, const hello &... rest) {
  
 
 /*____________________________________________________________________________________________________________________________________*/
-
+void base(int x)
+{
+    if(x == 0)
+    {
+       // cout << 1 ;
+        return;
+    }
+    base(x /2);
+    cout << x % 2;
+}
 
 
 void solve(){
-    ll a ,b , n;
-    cin >> a >> b >> n;
-    if(a > b)swap(a,b);
-     a--;
-    a = a / n;
-    b = b / n;
-    /*sir je ta bolsilo 1 to n er modde x koibar bag jai == n / x, 1 to 20 er modde 3 diye vag jai floor(20/3) == 6 ta number */
-   
-    cout << 1LL*((n*(b*(b+1)/2)) - (n*(a*(a+1)/2))) << nl;
+    int n;
+    cin >> n;
+    base(n);
+    cout << nl;
 
 }
 
@@ -135,7 +139,7 @@ int main(){
     
     bismillah
     int t=1;
-    //cin >> t;          // remove '//' for testcase
+    cin >> t;          // remove '//' for testcase
     while(t--){
         solve();
     }
